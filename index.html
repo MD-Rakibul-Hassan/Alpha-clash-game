@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Tailwind and dasiui cdn link  -->
+	<link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+	<script src="https://cdn.tailwindcss.com"></script>
+	<!-- Css file link  -->
+	<link rel="stylesheet" href="./styles/alpha.css">
+	<title>Alpha game</title>
+</head>
+<body>
+	<!-- Header Section  -->
+	<header></header>
+	<!-- Main section  -->
+	<main class="bg-slate-900 min-h-screen">
+		<div class="container mx-auto min-h-screen bg-no-repeat bg-center" style="background-image: url(./images/background.png);">
+			<!-- Play interface area or home screen -->
+			<div id="home">
+				<div class="home-interface-content flex  flex-col justify-center items-center min-h-screen ">
+					<h1 class="text-[120px] text-white font-extrabold">ALPHABET CLASH</h1>
+					<p class="text-white">Unleash your keybord kung fu : press "Enter" to play</p>
+					<button class=" bg-white px-10 py-5 rounded-lg mt-10" id="play-btn">Play Now</button>
+				</div>
+			</div>
+			<!-- Play ground interface  -->
+			<div id="playGround" class="hidden">
+				<div class="play-ground-interface flex flex-col justify-center items-center min-h-screen">
+					<!-- Artbord area  -->
+					<div class="artboard artboard-horizontal phone-6 border-[20px] border-[#010313cc] bg-[#ffffffb3] rounded-xl mb-20">
+						<div class="flex justify-center">
+							<p class="bg-slate-950 text-white px-5 py-2 rounded-b-2xl">Dont't watch keybord while plaing...</p>
+						</div>
+						<div class="key flex justify-center mt-20">
+							<h1 class="text-7xl font-extrabold" id="showAlphabet">Y</h1>
+						</div>
+					</div>
+					<!-- Keybord area  -->
+					<div class="keybord-area">
+						<div class="flex justify-center gap-1 my-1 w-full">
+							<kbd class="kbd" id="q">q</kbd>
+							<kbd class="kbd" id="w">w</kbd>
+							<kbd class="kbd" id="e">e</kbd>
+							<kbd class="kbd" id="r">r</kbd>
+							<kbd class="kbd" id="t">t</kbd>
+							<kbd class="kbd" id="y">y</kbd>
+							<kbd class="kbd" id="u">u</kbd>
+							<kbd class="kbd" id="i">i</kbd>
+							<kbd class="kbd" id="o">o</kbd>
+							<kbd class="kbd" id="p">p</kbd>
+						</div> 
+						<div class="flex justify-center gap-1 my-1 w-full">
+							<kbd class="kbd" id="a">a</kbd>
+							<kbd class="kbd" id="s">s</kbd>
+							<kbd class="kbd" id="d">d</kbd>
+							<kbd class="kbd" id="f">f</kbd>
+							<kbd class="kbd" id="g">g</kbd>
+							<kbd class="kbd" id="h">h</kbd>
+							<kbd class="kbd" id="j">j</kbd>
+							<kbd class="kbd" id="k">k</kbd>
+							<kbd class="kbd" id="l">l</kbd>
+						</div> 
+						<div class="flex justify-center gap-1 my-1 w-full">
+							<kbd class="kbd" id="z">z</kbd>
+							<kbd class="kbd" id="x">x</kbd>
+							<kbd class="kbd" id="c">c</kbd>
+							<kbd class="kbd" id="v">v</kbd>
+							<kbd class="kbd" id="b">b</kbd>
+							<kbd class="kbd" id="n">n</kbd>
+							<kbd class="kbd" id="m">m</kbd>
+							<kbd class="kbd" id="/">/</kbd>
+						</div>
+					</div>
+					<!-- Score area  -->
+					<div class="scores flex justify-around  w-full mt-10">
+						<div class="bg-fuchsia-600 px-5 py-1 rounded-2xl text-white">Life ❤️ <span id="life">5</span></div>
+						<div class="bg-indigo-800 px-5 py-1 rounded-2xl text-white">Score $ <span id="score">0</span></div>
+					</div>
+				</div>
+			</div>
+			<!-- Score show interface  -->
+			<div id="score">
+				<div class="hidden flex-col justify-center items-center min-h-screen ">
+					<div class="bg-violet-400  rounded-xl px-10 py-20">
+						<h1 class="text-[50px] font-extrabold text-white m-3">Score : <span>14</span></h1>
+						<button class="play-now mx-auto bg-white text-4xl rounded-xl px-5 py-3 font-bold flex justify-center">Play Now</button>
+						<p class="text-center text-white mt-3 text-2xl">Practice will make you pro</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- Footer section  -->
+	<footer></footer>
+	<!-- External JavaScript file link  -->
+	<script src="./scripts/alpha.js"></script>
+</body>
+</html>
